@@ -8,7 +8,7 @@ class ChoiceInline(admin.TabularInline):
     extra = 3
 
 
-class QuestionAdmin(admin.ModelAdmin):
+class QuestionAdmin(admin.ModelAdmin):                       
     search_fields = ['question_text']
     list_display = ('question_text', 'pub_date', 'was_published_recently')
     fieldsets = [
